@@ -33,11 +33,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
       {showConfetti && <Confetti />}
       <div className="status text-2xl mb-4 p-4 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white font-bold rounded-lg flex items-center justify-center relative">
         {status}
-        {winner && (
-          <div className="fire-animation absolute inset-0 flex items-center justify-center">
-            🔥🔥🔥
-          </div>
-        )}
+     
       </div>
       <div className="board-row flex">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
